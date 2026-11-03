@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dtemp"
+version = "0.2.0"
+description = "Read-only DDR DIMM (SPD5118 / JC42) and SSD temperature reader for Linux"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sean Webster" }]
+keywords = ["ddr5", "spd5118", "jc42", "temperature", "hwmon", "smbus", "i2c"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Hardware",
+    "Topic :: System :: Monitoring",
+]
+dependencies = []
+
+[project.optional-dependencies]
+smbus = ["smbus2"]
+test = ["pytest>=7", "pytest-cov"]
+
+[project.scripts]
+dtemp = "dtemp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dtemp = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["dtemp"]
+omit = ["*/ui.py"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true

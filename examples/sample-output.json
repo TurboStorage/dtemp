@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2026-01-01 12:00:00",
+    "slot": "DIMM 0",
+    "address": "i2c-1 0x50",
+    "kind": "memory",
+    "temp_c": 38.5,
+    "status": "OK",
+    "source": "simulated/spd5118",
+    "error": null,
+    "min_c": 38.5,
+    "max_c": 38.5,
+    "avg_c": 38.5
+  },
+  {
+    "timestamp": "2026-01-01 12:00:00",
+    "slot": "DIMM 1",
+    "address": "i2c-1 0x51",
+    "kind": "memory",
+    "temp_c": 41.25,
+    "status": "OK",
+    "source": "simulated/spd5118",
+    "error": null,
+    "min_c": 41.25,
+    "max_c": 41.25,
+    "avg_c": 41.25
+  },
+  {
+    "timestamp": "2026-01-01 12:00:00",
+    "slot": "DIMM 2",
+    "address": "i2c-1 0x52",
+    "kind": "memory",
+    "temp_c": 52.75,
+    "status": "WARN",
+    "source": "simulated/spd5118",
+    "error": null,
+    "min_c": 52.75,
+    "max_c": 52.75,
+    "avg_c": 52.75
+  },
+  {
+    "timestamp": "2026-01-01 12:00:00",
+    "slot": "DIMM 3",
+    "address": "i2c-1 0x53",
+    "kind": "memory",
+    "temp_c": 44.0,
+    "status": "OK",
+    "source": "simulated/spd5118",
+    "error": null,
+    "min_c": 44.0,
+    "max_c": 44.0,
+    "avg_c": 44.0
+  },
+  {
+    "timestamp": "2026-01-01 12:00:00",
+    "slot": "nvme0",
+    "address": "EXAMPLE NVMe 1TB",
+    "kind": "storage",
+    "temp_c": 44.85,
+    "status": "OK",
+    "source": "simulated",
+    "error": null,
+    "min_c": 44.85,
+    "max_c": 44.85,
+    "avg_c": 44.85
+  },
+  {
+    "timestamp": "2026-01-01 12:00:00",
+    "slot": "nvme1",
+    "address": "EXAMPLE NVMe 2TB",
+    "kind": "storage",
+    "temp_c": 39.85,
+    "status": "OK",
+    "source": "simulated",
+    "error": null,
+    "min_c": 39.85,
+    "max_c": 39.85,
+    "avg_c": 39.85
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "description": "Synthetic demo data. Not measured on any real hardware.",
+  "buses": [
+    {
+      "bus": 1,
+      "devices": [
+        {"addr": 80, "temp_c": 38.5},
+        {"addr": 81, "temp_c": 41.25},
+        {"addr": 82, "temp_c": 52.75},
+        {"addr": 83, "temp_c": 44.0},
+        {"addr": 84, "foreign": true}
+      ]
+    }
+  ],
+  "storage": [
+    {"name": "nvme0", "model": "EXAMPLE NVMe 1TB", "temp_c": 44.85},
+    {"name": "nvme1", "model": "EXAMPLE NVMe 2TB", "temp_c": 39.85}
+  ]
+}
